@@ -1,7 +1,5 @@
 use std::fmt;
-
 struct List(Vec<i32>);
-
 impl fmt::Display for List {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
         let vec = &self.0;
@@ -18,10 +16,10 @@ impl fmt::Display for List {
         write!(f, "]")
     }
 }
-
 fn main() {
     let v = List(vec![1, 2, 3]);
     println!("{} ", v);
+    //[v[0]: 1 ,v[1]: 2 ,v[2]: 3 ] 
 }
 
 
