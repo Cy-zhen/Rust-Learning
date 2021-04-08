@@ -18,6 +18,7 @@ fn main(){
     mutable  = 21;
 
     //Error:变量的类型不可以改变
+    //
     //mutable = true;
     
     //但可以用掩蔽（shadow）来覆盖前面的变量
