@@ -6,4 +6,4 @@
 
 现在让我们开始学习吧！
 * [Hello World](https://github.com/Cy-zhen/Rust-Learning/tree/master/Hello) - 从经典的 “Hello World” 程序开始学习。
-* [原生类型]() - 学习有符号整型，无符号整型和其他原生类型。
+* [原生类型](https://github.com/Cy-zhen/Rust-Learning/tree/master/primitive) - 学习有符号整型，无符号整型和其他原生类型。
