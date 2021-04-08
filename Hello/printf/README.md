@@ -1,8 +1,8 @@
 # 格式化输出
-`*本部分分为三个章节：*`
-* [调试（debug）]()
-* [调试（display）]()
-* [调试（format）]()
+*`本部分分为三个章节：`*
+* [调试（debug）](https://github.com/Cy-zhen/Rust-Learning/tree/master/Hello/printf/debug)
+* [调试（display）](https://github.com/Cy-zhen/Rust-Learning/tree/master/Hello/printf/display)
+* [调试（format）](https://github.com/Cy-zhen/Rust-Learning/tree/master/Hello/printf/format)
 
 打印操作由 [std::fmt](https://doc.rust-lang.org/std/fmt/) 里面所定义的一系列[宏]来()处理，包括：
 
