@@ -1,5 +1,9 @@
 # Hello World
-这是每一只程序猿👨‍💻的接触的第一个程序的源码 :computer:。
+ *`本部分分成两个章节:`*
+ * [注释](https://github.com/Cy-zhen/Rust-Learning/tree/master/Hello/annotation)
+ * [格式化输出](https://github.com/Cy-zhen/Rust-Learning/tree/master/Hello/printf)
+
+这是大部分程序猿👨‍💻所接触的第一个程序的源码 :computer:。
 
 ```Rust
 // 这是注释内容，将会被编译器忽略掉
