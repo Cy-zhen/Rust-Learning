@@ -1,4 +1,14 @@
+# 格式化
+我们已经看到，格式化的方式是通过格式字符串来指定的：
 
+* `format!("{}", foo)` -> `"3735928559"`
+* `format!("0x{:X}", foo)` ->["0xDEADBEEF"](https://en.wikipedia.org/wiki/Deadbeef#Magic_debug_values)
+* `format!("0o{:o}", foo)` -> `"0o33653337357"`
+
+根据使用的参数类型是 `X`、`o` 还是**未指定**，同样的变量`（foo）`能够格式化 成不同的形式。
+
+这个格式化的功能是通过 trait 实现的，每种参数类型都对应一种 trait。最常见的格式 化 trait 就是` Display`，它可以处理参数类型为未指定的情况，比如 `{}`。
+```Rust
 use std::fmt::{self, Formatter, Display};
 
 struct City {
@@ -36,11 +46,6 @@ fn main() {
         City { name: "Vancouver", lat: 49.25, lon: -123.1 },
     ].iter() {
         println!("{}", *city);
-        /*
-        Dublin: 53.348°N 6.260°W
-        Oslo: 59.950°N 10.750°E
-        Vancouver: 49.250°N 123.100°W 
-        */
     }
     for color in [
         Color { red: 128, green: 255, blue: 90 },
@@ -49,10 +54,8 @@ fn main() {
     ].iter() {
         // 在添加了针对 fmt::Display 的实现后，请改用 {} 检验效果。
         println!("{:?}", *color)
-        /*
-        Color { red: 128, green: 255, blue: 90 }
-        Color { red: 0, green: 3, blue: 254 }
-        Color { red: 0, green: 0, blue: 0 }
-         */
     }
 }
+
+```
+在 [fmt::fmt](https://doc.rust-lang.org/std/fmt/) 文档中可以查看[格式化 traits 一览表](https://doc.rust-lang.org/std/fmt/#formatting-traits)和它们的参 数类型。
