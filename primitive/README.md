@@ -3,6 +3,7 @@
 * [字面量和运算符](https://github.com/Cy-zhen/Rust-Learning/tree/master/primitive/LO)
 * [元组](https://github.com/Cy-zhen/Rust-Learning/tree/master/primitive/Tuple)
 * [数组和切片](https://github.com/Cy-zhen/Rust-Learning/tree/master/primitive/AaS)
+
 Rust 提供了多种原生类型(primitive)，包括：
 ## 标量类型（scalar type）
 * 有符号整型（signed integers）：`i8`、`i16`、`i32`、`i64` 和 `isize`（指针宽度）
