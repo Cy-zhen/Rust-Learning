@@ -8,3 +8,28 @@
 我们需要把字面量的类型告诉编译器。如前面学过的，我们使用` u32 `后缀来表明字面量 是一个 32 位无符号整数，`i32` 后缀表明字面量是一个 32 位有符号整数。
 
 [Rust](https://doc.rust-lang.org/reference.html#operator-precedence) 提供了一系列的运算符（operator），它们的优先级 和[类 C 语言](https://en.wikipedia.org/wiki/Operator_precedence#Programming_languages)的类似。（译注：类 C 语言包括 C/C++、Java、PHP 等语言。）
+```Rust
+fn main() {
+    // 整数相加
+    println!("1 + 2 = {}", 1u32 + 2);
+
+    // 整数相减
+    println!("1 - 2 = {}", 1i32 - 2);
+    // 试一试 ^ 尝试将 `1i32` 改为 `1u32`，体会为什么类型声明这么重要
+
+    // 短路求值的布尔逻辑
+    println!("true AND false is {}", true && false);
+    println!("true OR false is {}", true || false);
+    println!("NOT true is {}", !true);
+
+    // 位运算
+    println!("0011 AND 0101 is {:04b}", 0b0011u32 & 0b0101);
+    println!("0011 OR 0101 is {:04b}", 0b0011u32 | 0b0101);
+    println!("0011 XOR 0101 is {:04b}", 0b0011u32 ^ 0b0101);
+    println!("1 << 5 is {}", 1u32 << 5);
+    println!("0x80 >> 2 is 0x{:x}", 0x80u32 >> 2);
+
+    // 使用下划线改善数字的可读性！
+    println!("One million is written as {}", 1_000_000u32);
+}
+```
