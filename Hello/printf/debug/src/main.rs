@@ -39,7 +39,7 @@ fn main(){
     /**Person {
     name: "Peter",
     age: 27,
-} */
+    } */
 
 }
 
